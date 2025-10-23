@@ -51,10 +51,36 @@ The project demonstrates an end-to-end machine learning workflow — from data e
 
 
 ## 🔍 Key Insights & Outcomes
-- Borrowers with **higher interest rates** and **lower annual incomes** have increased default risk.  
-- **Loan grade**, **purpose**, and **debt-to-income ratio** are major predictors of repayment behavior.  
-- The **tuned Random Forest model** achieved the best performance with strong ROC-AUC results.  
-- Insights derived can support **risk-based loan pricing** and **credit decision automation**.
+
+### 1. Class Imbalance
+- Only ~14–15% of loans default; most are fully paid.  
+- **Accuracy alone is misleading** because models predicting mostly non-defaults appear accurate but fail to capture high-risk loans.
+
+### 2. Model Performance Summary
+
+**Tuned Logistic Regression** (Primary Model)  
+- Accuracy: 0.6388 | Precision: 0.2245 | Recall: 0.6311 | F1-score: 0.3312 | ROC-AUC: 0.6896  
+- Most effective for identifying high-risk loans while remaining interpretable.
+
+**Decision Tree**  
+- Base: Accuracy = 0.7673, Recall = 0.1940 → biased toward majority class  
+- Tuned: Accuracy = 0.5828, Recall = 0.6617 → better minority class detection but lower overall accuracy  
+- Shows the trade-off between accuracy and minority class detection.
+
+**Random Forest**  
+- Base: Accuracy = 0.8584, Recall = 0.0014, Precision = 0.6667 → fails to detect defaulters due to class imbalance  
+- Tuned: Accuracy = 0.6341, Recall = 0.6219, F1-score = 0.3251, ROC-AUC = 0.6828 → balances detection and accuracy  
+- Highlights importance of hyperparameter tuning and class balancing.
+
+### 3. Key Drivers of Loan Default
+- **Higher interest rates** and **lower annual incomes** increase default risk.  
+- **Loan grade**, **loan purpose**, and **debt-to-income ratio** are strong predictors of repayment behavior.
+
+### 4. Practical Recommendations
+- **Primary Model:** Tuned Logistic Regression — robust, interpretable, and captures most defaulters.  
+- **Secondary Check:** Tuned Random Forest — useful to cross-verify predictions.  
+- **Decision Tree:** Use only if carefully tuned; otherwise, biased toward the majority class.  
+- **Focus:** Optimize for **Recall** and **F1-score** on defaults rather than raw Accuracy due to class imbalance.
 
 ---
 
