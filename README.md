@@ -27,19 +27,15 @@ The project demonstrates an end-to-end machine learning workflow — from data e
 
 #### Bivariate Analysis 1  
 ![Bivariate Analysis 1](./images/Bivariate_Analysis_1.png)  
-*Relationship between interest rate and loan status.*
 
 #### Bivariate Analysis 2  
 ![Bivariate Analysis 2](./images/Bivariate_Analysis_2.png)  
-*Loan amount vs. grade distribution.*
 
 #### Bivariate Analysis 3  
 ![Bivariate Analysis 3](./images/Bivariate_Analysis_3.png)  
-*Debt-to-income ratio impact on default rates.*
 
 #### Bivariate Analysis 4  
 ![Bivariate Analysis 4](./images/Bivariate_Analysis_4.png)  
-*Employment length and its correlation with loan default.*
 
 ---
 
