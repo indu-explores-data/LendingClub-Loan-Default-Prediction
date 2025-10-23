@@ -24,22 +24,35 @@ The project demonstrates an end-to-end machine learning workflow — from data e
 ## 📊 Visualizations
 
 ### 🔹 Bivariate Analysis
-| Plot | Description |
-|------|--------------|
-| ![Bivariate Analysis 1](./images/Bivariate_Analysis_1.png) | Relationship between interest rate and loan status. |
-| ![Bivariate Analysis 2](./images/Bivariate_Analysis_2.png) | Loan amount vs. grade distribution. |
-| ![Bivariate Analysis 3](./images/Bivariate_Analysis_3.png) | Debt-to-income ratio impact on default rates. |
-| ![Bivariate Analysis 4](./images/Bivariate_Analysis_4.png) | Employment length and its correlation with loan default. |
 
-### 🔹 Model Comparison
-![Model Comparison Table (Base vs Tuned)](./images/Model%20Comparison%20Table%20(Base%20vs%20Tuned).png)  
-*Comparison of model performance before and after hyperparameter tuning.*
+#### Bivariate Analysis 1  
+![Bivariate Analysis 1](./images/Bivariate_Analysis_1.png)  
+*Relationship between interest rate and loan status.*
 
-### 🔹 Feature Importance
-![Top 5 Features by Importance (Tuned Logistic Regression)](./images/Top%205%20Features%20by%20Importance%20(Tuned%20Logistic%20Regression).png)  
-*Top features contributing most to loan default prediction.*
+#### Bivariate Analysis 2  
+![Bivariate Analysis 2](./images/Bivariate_Analysis_2.png)  
+*Loan amount vs. grade distribution.*
+
+#### Bivariate Analysis 3  
+![Bivariate Analysis 3](./images/Bivariate_Analysis_3.png)  
+*Debt-to-income ratio impact on default rates.*
+
+#### Bivariate Analysis 4  
+![Bivariate Analysis 4](./images/Bivariate_Analysis_4.png)  
+*Employment length and its correlation with loan default.*
 
 ---
+
+### 🔹 Model Comparison
+![Model Comparison Table (Base vs Tuned)](./images/Model%20Comparison%20Table%20%28Base%20vs%20Tuned%29.png)  
+*Comparison of model performance before and after hyperparameter tuning.*
+
+---
+
+### 🔹 Feature Importance
+![Top 5 Features by Importance (Tuned Logistic Regression)](./images/Top%205%20Features%20by%20Importance%20%28Tuned%20Logistic%20Regression%29.png)  
+*Top features contributing most to loan default prediction.*
+
 
 ## 🔍 Key Insights & Outcomes
 - Borrowers with **higher interest rates** and **lower annual incomes** have increased default risk.  
